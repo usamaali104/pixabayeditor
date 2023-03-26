@@ -1,4 +1,4 @@
-package com.lacolinares.jetpicexpress.util
+package com.bytee.beyondapps.util
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

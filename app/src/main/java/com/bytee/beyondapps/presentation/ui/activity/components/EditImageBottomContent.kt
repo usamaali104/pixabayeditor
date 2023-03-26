@@ -22,7 +22,7 @@ import com.bytee.beyondapps.presentation.ui.activity.ui.theme.DarkTransparent
 import com.bytee.beyondapps.presentation.ui.activity.ui.theme.Light200
 import com.bytee.beyondapps.presentation.ui.activity.ui.theme.Shapes
 import com.bytee.beyondapps.presentation.viewmodel.EditImageViewModel
-import com.lacolinares.jetpicexpress.util.CoroutineThread
+import com.bytee.beyondapps.util.CoroutineThread
 import jp.co.cyberagent.android.gpuimage.GPUImage
 import kotlinx.coroutines.delay
 

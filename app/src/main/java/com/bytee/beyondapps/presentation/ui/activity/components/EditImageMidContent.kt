@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import com.bytee.beyondapps.presentation.ui.activity.ui.theme.Dark700
-import com.lacolinares.jetpicexpress.util.CoroutineThread
+import com.bytee.beyondapps.util.CoroutineThread
 import kotlinx.coroutines.delay
 
 

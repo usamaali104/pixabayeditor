@@ -4,7 +4,7 @@ import com.bytee.beyondapps.data.utils.PBThrowable
 import com.bytee.beyondapps.domain.repositories.RandomPhotosRepository
 import javax.inject.Inject
 import  com.bytee.beyondapps.data.utils.Result
-import com.bytee.beyondapps.domain.model.RandomImagesResponse
+import com.bytee.beyondapps.data.model.RandomImagesResponse
 
 class GetRandomPhotosUseCase @Inject constructor(
     private val repository: RandomPhotosRepository

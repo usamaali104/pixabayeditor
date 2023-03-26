@@ -5,7 +5,7 @@ import android.graphics.Bitmap
 import com.bytee.beyondapps.data.imagefilter.ImageFilter
 import com.bytee.beyondapps.presentation.ui.activity.mapper.EditImageMapper
 import com.bytee.beyondapps.util.FileHelper
-import com.lacolinares.jetpicexpress.util.extensions.toJpeg
+import com.bytee.beyondapps.util.extensions.toJpeg
 import jp.co.cyberagent.android.gpuimage.GPUImage
 import java.io.File
 import java.io.FileOutputStream

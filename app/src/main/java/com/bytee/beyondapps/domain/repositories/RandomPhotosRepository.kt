@@ -7,7 +7,7 @@ import io.ktor.client.request.*
 import io.ktor.http.*
 import javax.inject.Inject
 import  com.bytee.beyondapps.data.utils.Result
-import com.bytee.beyondapps.domain.model.RandomImagesResponse
+import com.bytee.beyondapps.data.model.RandomImagesResponse
 
 class RandomPhotosRepository @Inject constructor(
     private val pixabayNetworkClient: PixabayNetworkClient,

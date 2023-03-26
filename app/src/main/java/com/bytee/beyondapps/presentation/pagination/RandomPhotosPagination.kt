@@ -4,7 +4,7 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import coil.network.HttpException
 import com.bytee.beyondapps.data.utils.Result
-import com.bytee.beyondapps.domain.model.RandomPhotos
+import com.bytee.beyondapps.data.model.RandomPhotos
 import com.bytee.beyondapps.domain.usecases.GetRandomPhotosUseCase
 import io.ktor.utils.io.errors.*
 

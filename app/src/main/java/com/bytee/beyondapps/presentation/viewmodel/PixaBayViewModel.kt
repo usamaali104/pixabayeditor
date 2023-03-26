@@ -8,8 +8,8 @@ import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.bytee.beyondapps.data.utils.PBThrowable
 import com.bytee.beyondapps.data.utils.UiState
-import com.bytee.beyondapps.domain.model.RandomPhotos
-import com.bytee.beyondapps.domain.model.RandomImagesResponse
+import com.bytee.beyondapps.data.model.RandomPhotos
+import com.bytee.beyondapps.data.model.RandomImagesResponse
 import com.bytee.beyondapps.presentation.pagination.RandomPhotosPagination
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow

@@ -1,1 +1,1 @@
-package com.lacolinares.jetpicexpress.util.extensions
+package com.bytee.beyondapps.util.extensions
