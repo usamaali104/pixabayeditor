@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pixabay Editor</string>
+    <string name="title_activity_recipe_detail">RecipeDetailActivity</string>
+</resources>

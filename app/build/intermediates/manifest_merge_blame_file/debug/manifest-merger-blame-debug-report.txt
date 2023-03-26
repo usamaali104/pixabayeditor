@@ -1,0 +1,171 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bytee.beyondsapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:6:5-67
+12-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:7:5-80
+13-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:8:5-81
+14-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:8:22-78
+15
+16    <application
+16-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:10:5-44:19
+17        android:name="com.bytee.beyondapps.PixabayApiApp"
+17-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:11:9-58
+18        android:allowBackup="true"
+18-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.7.0] /Users/usamaali/.gradle/caches/transforms-3/fd13579d4bacf75fa5485fd4adb1760b/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:14:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:15:9-54
+24        android:supportsRtl="true"
+24-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:16:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.FoodRecipe"
+26-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:17:9-48
+27        android:usesCleartextTraffic="true" >
+27-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:18:9-44
+28        <activity
+28-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:19:9-21:39
+29            android:name="com.bytee.beyondapps.presentation.ui.activity.EditImageActivity"
+29-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:20:13-71
+30            android:exported="true" />
+30-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:21:13-36
+31        <activity
+31-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:22:9-32:20
+32            android:name="com.bytee.beyondapps.presentation.ui.activity.PixabayActivity"
+32-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:23:13-89
+33            android:exported="true"
+33-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:24:13-36
+34            android:label="@string/app_name"
+34-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:25:13-45
+35            android:theme="@style/Theme.FoodRecipe" >
+35-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:26:13-52
+36            <intent-filter>
+36-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:27:13-31:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:28:17-69
+37-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:28:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:30:17-77
+39-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:30:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <provider
+44            android:name="androidx.core.content.FileProvider"
+44-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:37:13-62
+45            android:authorities="com.bytee.beyondsapp.provider"
+45-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:36:13-60
+46            android:exported="false"
+46-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:38:13-37
+47            android:grantUriPermissions="true" >
+47-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:39:13-47
+48            <meta-data
+48-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:40:13-42:56
+49                android:name="android.support.FILE_PROVIDER_PATHS"
+49-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:41:17-67
+50                android:resource="@xml/provider_path" />
+50-->/Users/usamaali/AndroidStudioProjects/PixaBayApi/app/src/main/AndroidManifest.xml:42:17-54
+51        </provider>
+52
+53        <activity
+53-->[androidx.compose.ui:ui-tooling:1.0.0-rc01] /Users/usamaali/.gradle/caches/transforms-3/26035b7275d2a9325a9bdebe206f765f/transformed/ui-tooling-1.0.0-rc01/AndroidManifest.xml:25:9-27:39
+54            android:name="androidx.compose.ui.tooling.PreviewActivity"
+54-->[androidx.compose.ui:ui-tooling:1.0.0-rc01] /Users/usamaali/.gradle/caches/transforms-3/26035b7275d2a9325a9bdebe206f765f/transformed/ui-tooling-1.0.0-rc01/AndroidManifest.xml:26:13-71
+55            android:exported="true" />
+55-->[androidx.compose.ui:ui-tooling:1.0.0-rc01] /Users/usamaali/.gradle/caches/transforms-3/26035b7275d2a9325a9bdebe206f765f/transformed/ui-tooling-1.0.0-rc01/AndroidManifest.xml:27:13-36
+56
+57        <uses-library
+57-->[androidx.window:window:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/4c0c89f8531b173509070b84e4f16e07/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+58            android:name="androidx.window.extensions"
+58-->[androidx.window:window:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/4c0c89f8531b173509070b84e4f16e07/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+59            android:required="false" />
+59-->[androidx.window:window:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/4c0c89f8531b173509070b84e4f16e07/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+60        <uses-library
+60-->[androidx.window:window:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/4c0c89f8531b173509070b84e4f16e07/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+61            android:name="androidx.window.sidecar"
+61-->[androidx.window:window:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/4c0c89f8531b173509070b84e4f16e07/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/4c0c89f8531b173509070b84e4f16e07/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+63
+64        <service
+64-->[androidx.room:room-runtime:2.4.1] /Users/usamaali/.gradle/caches/transforms-3/91a5e82604087f47d9fd7e21d2d01536/transformed/room-runtime-2.4.1/AndroidManifest.xml:25:9-28:40
+65            android:name="androidx.room.MultiInstanceInvalidationService"
+65-->[androidx.room:room-runtime:2.4.1] /Users/usamaali/.gradle/caches/transforms-3/91a5e82604087f47d9fd7e21d2d01536/transformed/room-runtime-2.4.1/AndroidManifest.xml:26:13-74
+66            android:directBootAware="true"
+66-->[androidx.room:room-runtime:2.4.1] /Users/usamaali/.gradle/caches/transforms-3/91a5e82604087f47d9fd7e21d2d01536/transformed/room-runtime-2.4.1/AndroidManifest.xml:27:13-43
+67            android:exported="false" />
+67-->[androidx.room:room-runtime:2.4.1] /Users/usamaali/.gradle/caches/transforms-3/91a5e82604087f47d9fd7e21d2d01536/transformed/room-runtime-2.4.1/AndroidManifest.xml:28:13-37
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/349379170266adfdb5f2d3b5c54469a2/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/349379170266adfdb5f2d3b5c54469a2/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+71            android:authorities="com.bytee.beyondsapp.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/349379170266adfdb5f2d3b5c54469a2/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/349379170266adfdb5f2d3b5c54469a2/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/349379170266adfdb5f2d3b5c54469a2/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/349379170266adfdb5f2d3b5c54469a2/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.0.0] /Users/usamaali/.gradle/caches/transforms-3/349379170266adfdb5f2d3b5c54469a2/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/usamaali/.gradle/caches/transforms-3/b353b88e63ff251ea1709d3804d25e8d/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/usamaali/.gradle/caches/transforms-3/b353b88e63ff251ea1709d3804d25e8d/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/usamaali/.gradle/caches/transforms-3/b353b88e63ff251ea1709d3804d25e8d/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+79            <meta-data
+79-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:31:13-33:52
+80                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+80-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:32:17-85
+81                android:value="androidx.startup" />
+81-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:33:17-49
+82        </provider>
+83
+84        <receiver
+84-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:36:9-45:20
+85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+85-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:37:13-76
+86            android:directBootAware="false"
+86-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:38:13-44
+87            android:enabled="true"
+87-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:39:13-35
+88            android:exported="true"
+88-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:40:13-36
+89            android:permission="android.permission.DUMP" >
+89-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:41:13-57
+90            <intent-filter>
+90-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:42:13-44:29
+91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:43:17-91
+91-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:43:25-88
+92            </intent-filter>
+93        </receiver>
+94    </application>
+95
+96</manifest>
