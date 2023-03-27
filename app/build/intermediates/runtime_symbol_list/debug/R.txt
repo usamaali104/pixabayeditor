@@ -1818,6 +1818,9 @@ int color test_mtrl_calendar_day 0x7f05024e
 int color test_mtrl_calendar_day_selected 0x7f05024f
 int color tooltip_background_dark 0x7f050250
 int color tooltip_background_light 0x7f050251
+int color triangle_color 0x7f050255
+int color vector_tint_color 0x7f050253
+int color vector_tint_theme_color 0x7f050254
 int color white 0x7f050252
 int dimen _100sdp 0x7f060000
 int dimen _100ssp 0x7f060001
@@ -3258,6 +3261,7 @@ int drawable design_ic_visibility 0x7f070062
 int drawable design_ic_visibility_off 0x7f070063
 int drawable design_password_eye 0x7f070064
 int drawable design_snackbar_background 0x7f070065
+int drawable ic_100tb 0x7f07009f
 int drawable ic_clock_black_24dp 0x7f070066
 int drawable ic_keyboard_black_24dp 0x7f070067
 int drawable ic_launcher_background 0x7f070068
@@ -4043,6 +4047,8 @@ int string clear_text_end_icon_content_description 0x7f110024
 int string close_drawer 0x7f110025
 int string close_sheet 0x7f110026
 int string default_error_message 0x7f110027
+int string default_popup_window_title 0x7f110093
+int string dropdown_menu 0x7f110094
 int string error_icon_content_description 0x7f110028
 int string exposed_dropdown_menu_content_description 0x7f110029
 int string fab_transformation_scrim_behavior 0x7f11002a

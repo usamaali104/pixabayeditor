@@ -140,30 +140,30 @@
 78                android:value="androidx.startup" />
 78-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/usamaali/.gradle/caches/transforms-3/b353b88e63ff251ea1709d3804d25e8d/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
 79            <meta-data
-79-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:31:13-33:52
+79-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:31:13-33:52
 80                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-80-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:32:17-85
+80-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:32:17-85
 81                android:value="androidx.startup" />
-81-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:33:17-49
+81-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:33:17-49
 82        </provider>
 83
 84        <receiver
-84-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:36:9-45:20
+84-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:36:9-45:20
 85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-85-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:37:13-76
+85-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:37:13-76
 86            android:directBootAware="false"
-86-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:38:13-44
+86-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:38:13-44
 87            android:enabled="true"
-87-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:39:13-35
+87-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:39:13-35
 88            android:exported="true"
-88-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:40:13-36
+88-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:40:13-36
 89            android:permission="android.permission.DUMP" >
-89-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:41:13-57
+89-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:41:13-57
 90            <intent-filter>
-90-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:42:13-44:29
+90-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:42:13-44:29
 91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-91-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:43:17-91
-91-->[androidx.profileinstaller:profileinstaller:1.0.3] /Users/usamaali/.gradle/caches/transforms-3/174e141d1f3af01057d2df2ec1cb14df/transformed/profileinstaller-1.0.3/AndroidManifest.xml:43:25-88
+91-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:17-91
+91-->[androidx.profileinstaller:profileinstaller:1.1.0] /Users/usamaali/.gradle/caches/transforms-3/2c362c79467d13c403c53d187344cc28/transformed/profileinstaller-1.1.0/AndroidManifest.xml:43:25-88
 92            </intent-filter>
 93        </receiver>
 94    </application>

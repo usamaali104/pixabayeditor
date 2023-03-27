@@ -10,6 +10,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.*
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.runtime.*
@@ -17,13 +18,21 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.paging.LoadState
 import androidx.paging.compose.LazyPagingItems
 import androidx.paging.compose.collectAsLazyPagingItems
+import coil.compose.AsyncImage
+import coil.compose.SubcomposeAsyncImage
+import coil.compose.rememberAsyncImagePainter
 import coil.compose.rememberImagePainter
+import coil.request.ImageRequest
+import com.bytee.beyondapps.R
 import com.bytee.beyondapps.presentation.ui.activity.ui.theme.PixabayTheme
 import com.bytee.beyondapps.presentation.ui.activity.ui.theme.Teal200
 import com.bytee.beyondapps.presentation.viewmodel.PixaBayViewModel
@@ -42,14 +51,18 @@ class PixabayActivity : ComponentActivity() {
                 ) {
                     Scaffold(
                         topBar = {
-                            TopAppBar(modifier = Modifier
-                                .fillMaxWidth()
-                                .background(color = Teal200)) {
-                                Text(text = "  Mountains Wallpaper",
+                            TopAppBar(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .background(color = Teal200)
+                            ) {
+                                Text(
+                                    text = "  Mountains Wallpaper",
                                     color = Color.White,
                                     fontWeight = FontWeight.Bold,
                                     fontSize = 16.sp,
-                                    style = MaterialTheme.typography.body1)
+                                    style = MaterialTheme.typography.body1
+                                )
                             }
                         }
                     ) {
@@ -80,14 +93,6 @@ fun RandomPhotosUi(
         modifier = Modifier.fillMaxSize()
     ) {
 
-//        EditImageTopContent(
-//            modifier = Modifier,
-//            onSave = {},
-//            onBack = {},
-//            title = "Mountains Wallpapers",
-//            showActionIcon = false,
-//            showNavigationIcon = false)
-
         LazyVerticalGrid(
             modifier = Modifier.padding(5.dp), cells = GridCells.Fixed(2)
         ) {
@@ -109,11 +114,133 @@ fun RandomPhotosUi(
                             .align(Alignment.CenterHorizontally),
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
-                        Image(
-                            rememberImagePainter(data = randomPhotos?.largeImageURL),
-                            contentDescription = "images",
-                            contentScale = ContentScale.Crop,
-                        )
+                        ConstraintLayout(modifier = Modifier.fillMaxSize()) {
+                            val (tags, profile, name) = createRefs()
+                            SubcomposeAsyncImage(
+                                model = ImageRequest.Builder(LocalContext.current)
+                                    .data(randomPhotos?.largeImageURL)
+                                    .crossfade(true)
+                                    .build(),
+                                contentDescription = "images",
+                                contentScale = ContentScale.Crop,
+                                loading = {
+                                    Box(modifier = Modifier.fillMaxSize().align(Alignment.Center)) {
+                                        CircularProgressIndicator(modifier = Modifier
+                                            .align(Alignment.Center)
+                                            .size(30.dp))
+                                    }
+                                }
+                            )
+
+                            Card(
+                                modifier = Modifier
+                                    .constrainAs(profile) {
+                                        top.linkTo(parent.top)
+                                        start.linkTo(parent.start)
+                                    }
+                                    .size(50.dp)
+                                    .padding(5.dp),
+                                elevation = 10.dp,
+                                shape = CircleShape
+                            ) {
+                                Image(
+                                    rememberImagePainter(data = randomPhotos?.userImageURL),
+                                    contentDescription = "images",
+                                    contentScale = ContentScale.Crop,
+                                )
+                            }
+                            Box(
+                                modifier = Modifier
+                                    .constrainAs(name) {
+                                        start.linkTo(profile.end)
+                                        top.linkTo(parent.top)
+                                    }
+                                    .wrapContentWidth()
+                                    .padding(5.dp)
+                                    .background(
+                                        color = Color.Black.copy(alpha = 0.5f),
+                                        RoundedCornerShape(5.dp)
+                                    )
+                                    .padding(5.dp)
+                            ) {
+                                Text(
+                                    text = randomPhotos?.user.toString(),
+                                    color = Color.White,
+                                    fontSize = 10.sp,
+                                    style = MaterialTheme.typography.body1
+                                )
+                            }
+
+                            Column(modifier = Modifier
+                                .constrainAs(tags) {
+                                    bottom.linkTo(parent.bottom)
+                                    start.linkTo(parent.start)
+                                }
+                                .fillMaxWidth()) {
+
+                                Box(
+                                    modifier = Modifier
+                                        .wrapContentWidth()
+                                        .padding(5.dp)
+                                        .background(
+                                            color = Color.Black.copy(alpha = 0.5f),
+                                            RoundedCornerShape(5.dp)
+                                        )
+                                        .padding(5.dp)
+                                ) {
+                                    Text(
+                                        text = randomPhotos?.tags.toString(),
+                                        color = Color.White,
+                                        fontSize = 10.sp,
+                                        style = MaterialTheme.typography.body1
+                                    )
+                                }
+
+                                Box(
+                                    modifier = Modifier
+                                        .wrapContentWidth()
+                                        .padding(5.dp)
+                                        .background(
+                                            color = Color.Black.copy(alpha = 0.5f),
+                                            RoundedCornerShape(5.dp)
+                                        )
+                                        .padding(5.dp)
+                                ) {
+
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween
+                                    ) {
+                                        Text(
+                                            text = "Likes \n${randomPhotos?.likes.toString()}",
+                                            color = Color.White,
+                                            fontSize = 9.sp,
+                                            style = MaterialTheme.typography.body1,
+                                            textAlign = TextAlign.Center
+                                        )
+
+                                        Text(
+                                            text = "Downloads \n${randomPhotos?.downloads.toString()}",
+                                            color = Color.White,
+                                            fontSize = 9.sp,
+                                            style = MaterialTheme.typography.body1,
+                                            textAlign = TextAlign.Center
+                                        )
+
+                                        Text(
+                                            text = "Comments \n${randomPhotos?.comments.toString()}",
+                                            color = Color.White,
+                                            fontSize = 9.sp,
+                                            style = MaterialTheme.typography.body1,
+                                            textAlign = TextAlign.Center
+                                        )
+                                    }
+
+                                }
+                            }
+
+                        }
+
                     }
                 }
             }

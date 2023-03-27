@@ -85,17 +85,17 @@ import hilt_aggregated_deps._dagger_hilt_android_internal_modules_HiltWrapper_Ac
         _dagger_hilt_android_internal_managers_ViewComponentManager_ViewWithFragmentComponentBuilderEntryPoint.class,
         _dagger_hilt_android_internal_modules_ApplicationContextModule.class,
         _dagger_hilt_android_internal_modules_HiltWrapper_ActivityModule.class,
-        _com_bytee_beyondapps_presentation_viewmodel_PixaBayViewModel_HiltModules_KeyModule.class,
-        _com_bytee_beyondapps_data_di_FileHelperModule.class,
+        _com_bytee_beyondapps_data_di_EditImageRepositoryModule.class,
         _com_bytee_beyondapps_data_di_ApiModule.class,
-        _com_bytee_beyondapps_presentation_viewmodel_PixaBayViewModel_HiltModules_BindsModule.class,
+        _com_bytee_beyondapps_data_di_FileHelperModule.class,
+        _com_bytee_beyondapps_data_di_RepoModule.class,
         _com_bytee_beyondapps_presentation_ui_activity_PixabayActivity_GeneratedInjector.class,
         _com_bytee_beyondapps_presentation_ui_activity_EditImageActivity_GeneratedInjector.class,
         _com_bytee_beyondapps_PixabayApiApp_GeneratedInjector.class,
-        _com_bytee_beyondapps_data_di_EditImageRepositoryModule.class,
-        _com_bytee_beyondapps_presentation_viewmodel_EditImageViewModel_HiltModules_KeyModule.class,
         _com_bytee_beyondapps_presentation_viewmodel_EditImageViewModel_HiltModules_BindsModule.class,
-        _com_bytee_beyondapps_data_di_RepoModule.class
+        _com_bytee_beyondapps_presentation_viewmodel_EditImageViewModel_HiltModules_KeyModule.class,
+        _com_bytee_beyondapps_presentation_viewmodel_PixaBayViewModel_HiltModules_BindsModule.class,
+        _com_bytee_beyondapps_presentation_viewmodel_PixaBayViewModel_HiltModules_KeyModule.class
     }
 )
 class PixabayApiApp_ComponentTreeDeps {
