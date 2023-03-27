@@ -34,7 +34,7 @@ import jp.co.cyberagent.android.gpuimage.GPUImage
 class EditImageActivity : ComponentActivity() {
 
     var imageUrl: String = ""
-    var bitmap: Bitmap?=null
+    var bitmap: Bitmap? = null
     private val viewModel: EditImageViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -111,18 +111,17 @@ fun EditImageUi(
             hasFilteredImage = hasFilteredImage.value,
             modifier = topModifier,
             onSave = {
-                     viewModel.saveFilteredImage()
+                viewModel.saveFilteredImage()
             }, onBack = {
                 (context as EditImageActivity).finish()
             }
         )
         val filteredBitmap = viewModel.filteredBitmap.collectAsState()
-        filteredBitmap.value?.let {
-            EditImageMidContent(
-                bitmap = it,
-                modifier = midModifier
-            )
-        }
+
+        EditImageMidContent(
+            bitmap = filteredBitmap.value ?: originalBitmap,
+            modifier = midModifier
+        )
         EditImageBottomContent(
             viewModel = viewModel,
             gpuImage = gpuImage,
